@@ -1,0 +1,579 @@
+@font-face {
+    font-family: monasansr;
+    src: url(Fonts/MonaSans-Regular.otf);
+}
+@font-face {
+    font-family: Agrandir;
+    src: url(Fonts/Agrandir-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #000;   
+}
+.hero-section{
+    height: 100vh;
+    font-size: 3rem;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: rgba(255, 0, 0, 0.132); */
+}
+.title1{
+    /* background-color: red; */
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    z-index: 5;
+}
+.title1 .text-box1, .title1 .text-box2{
+    height: 4.3rem;
+    width: 9rem;
+    border-radius: 3rem;
+    /* border: 1px solid white; */
+    margin: 0 1rem;
+    overflow: hidden;
+}
+.title1 .text-box1{
+    background-color: #515151;
+}
+.title1 .text-box1 img{
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.title1 .text-box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-section h1{
+    color: aliceblue;
+    font-family: Agrandir;
+    line-height: 5.2rem;
+    font-size: 5.5rem;
+    letter-spacing: 0.01rem;
+}
+
+
+/* caption */
+
+.hero-section .caption{
+    /* background-color: red; */
+    font-family: monasansr;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    /* margin: 2rem 0; */
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    position: relative;
+    z-index: 5;
+}
+.hero-section .caption p{
+    width: 70%;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Skills */
+
+.skills{
+    /* background-color: #ff0000; */
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    padding: 0 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.skills p{
+    font-family: monasansr;
+    border: none;
+    /* background-color: #231f20d6; */
+    background-color: #ff000067;
+    font-size: 0.9rem;
+    padding: 0.2rem 1rem 0.3rem 1rem;
+    border-radius: 1rem;
+    color: #e2e2e2;
+}
+.skills p:hover{
+    background-color: #ff000083;
+    cursor: pointer;
+}
+
+#Layer_1{
+    position: absolute;
+    top: 8%;
+    z-index: 1;
+    width: 90%;
+    left: 40%;
+    transform: translateX(-40%);
+}
+
+/* Page 2 */
+.webDesign{
+    background-color: #c3bcbc77;
+    width: 100%;
+    padding: 0 4vw;
+    position: relative;
+    display: flex;
+}
+
+/* Content */
+.webDesign .content, .graphicDesign .content{
+    /* background-color: lightgoldenrodyellow; */
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.webDesign .content h1{
+    font-family: Agrandir;
+    font-size: 6rem;
+    line-height: 6rem;
+    
+}
+.webDesign .content p{
+    font-family: monasansr;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+}
+
+/* WebWorks */
+.webDesign .webWorks{
+    /* background-color: rgb(248, 248, 189); */
+    /* height: 100%;
+    overflow: scroll; */
+    width: 65%;
+    padding: 5vh 3vw;
+}
+.webDesign .webWorks::-webkit-scrollbar{
+    display: none;
+}
+.webDesign .webWorks .webWrk{
+    height: 450px;
+    width: 100%;
+    /* background-color: rgb(20, 20, 20); */
+    /* border-radius: 0.5rem; */
+}
+.webWorks .webWrk video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.webWorks .webWrk img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.webWorks .heads{
+    /* background-color: rgb(255, 191, 166); */
+    width: 100%;
+    font-family: monasansr;
+    margin-bottom: 5rem;
+}
+.webWorks .heads h1{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+}
+.webWorks .heads p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+
+/* Page 3 */
+.graphicDesign{
+    /* background-color: #eb0000; */
+    background-color: #c3bcbc77;
+    /* height: 100%; */
+    width: 100%;
+    padding: 0 4vw;
+    position: relative;
+    display: flex;
+}
+/* Content */
+.graphicDesign .content{
+    /* background-color: #e2e2e26a; */
+    color: #000;
+}
+.graphicDesign .content h1{
+    font-family: Agrandir;
+    font-size: 6rem;
+    line-height: 6rem;
+    
+}
+.graphicDesign .content p{
+    font-family: monasansr;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+}
+
+/* GraphicWorks */
+.graphicWorks{
+    /* height: 100vh; */
+    /* background-color: yellowgreen; */
+    width: 65%;
+    padding: 5vh 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #000;
+}
+.graphicWorks .graphicWrk{
+    width: 100%;
+    height: 500px;
+    background-color: #D4CFC9;
+    border-radius: 1rem;
+}
+.graphicWrk img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.graphicWorks .graphicGrid{
+    height: 400px;
+    width: 100%;
+    /* background-color: darkgreen; */
+    display: flex;
+    gap: 1.5rem;
+}
+.graphicGrid .graphicimg{
+    height: 100%;
+    /* background-color: green; */
+    width: 50%;
+}
+.graphicGrid .graphicimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.graphicWorks .heads{
+    /* background-color: rgb(255, 191, 166); */
+    width: 100%;
+    font-family: monasansr;
+    margin-bottom: 5rem;
+    /* color: #fff; */
+}
+.graphicWorks .heads h1{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #000;
+}
+.graphicWorks .heads p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+
+
+.UIDesign{
+    background-color: c3bcbc77;
+    /* color: #fff; */
+}
+/* .UIDesign .content{
+    color: #fff;
+}
+.UIDesign .graphicWorks .heads h1{
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.UIDesign .graphicWorks .heads p{
+    color: #fff;
+} */
+
+/* Page 5 */
+.something{
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(236, 233, 194);
+    /* background-color: #c3bcbc77; */
+    padding: 5vh 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.something .title, .Project .title{
+    /* background-color: red; */
+    font-family: Agrandir;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.8rem;
+    position: relative;
+    z-index: 5;
+}
+.something h1, .Project h1{
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+.something p, .Project p{
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+}
+.something .skillsd{
+    /* background-color: hotpink; */
+    height: 90%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+.skillsd .development{
+    width: 30%;
+    /* background-color: rgba(0, 0, 0, 0.655); */
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #222;
+}
+.skillsd .development h1{
+    font-family: Agrandir;
+    font-size: 3.5rem;
+    text-align: left;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+.skillsd .development p{
+    font-family: monasansr;
+    color: #fefefe;
+    background-color: #303030;
+    /* background-color: #325835; */
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+/* Watermark */
+/* .something .watermark{
+    position: absolute;
+    bottom: -3%;
+    z-index: 1;
+    color: #51515181;
+    right: 3vw;
+} */
+
+/* Page 6 */
+.Project{
+    background-color: #c3bcbc77;
+    width: 100%;
+    /* height: 100%; */
+    padding: 5vh 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+.projects{
+    height: 400px;
+    width: 100%;
+    background-color: #325835;
+    margin-top: 5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+}
+.projects h1{
+    font-family: Agrandir;
+    font-size: 12vw;
+    color: #fefefe;
+}
+/* Watermark */
+.Project .watermark{
+    color: #51515181;
+    /* background-color: red; */
+    font-family: Agrandir;
+    width: 100%;
+    padding: 5vw;
+    margin-top: 5vw;
+}
+.Project .watermark h1{
+    font-size: 12vw;
+    text-align: left;
+    line-height: 10vw;
+    text-transform: uppercase;
+}
+.Project .watermark p{
+    margin-left: 0.5vw;
+}
+@media all and (max-width: 600px){
+    .title1{
+        /* background-color: red; */
+    }
+    .title1 .text-box1, .title1 .text-box2{
+        height: 2.8rem;
+        /* width: 5.4rem; */
+        width: 25%;
+        border-radius: 3rem; 
+        margin: 0 0.8rem;
+    }
+    .hero-section h1{
+        line-height: 2.5rem;
+        font-family: monasansr;
+        font-size: 8vw;
+        letter-spacing: -0.1rem;
+    }
+    .title2{
+        height: 100%;
+        width: 50%;
+        background-color: #ed151577;
+    }
+
+    /* Caption */
+    .hero-section .caption{
+        /* background-color: red; */
+        margin: 2rem 0;
+        position: relative;
+        z-index: 5;
+    }
+    .hero-section .caption p{
+        width: 90%;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+    .skills{
+        /* background-color: #390f0f77; */
+        width: 100%;
+        position: relative;
+        z-index: 5;
+        padding: 0 2rem;
+        gap: 0.4rem;
+    }
+
+
+    /* Page 2 */
+    .webDesign{
+        padding: 5vh 4vw;
+        display: block;
+    }
+    .webDesign .content{
+        /* background-color: lightgoldenrodyellow; */
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+    .webDesign .content h1{
+        font-size: 16vw;
+        line-height: 15vw;
+        
+    }
+    .webDesign .content p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    /* WebWorks */
+    .webDesign .webWorks{
+        width: 100%;
+        padding: 5vh 0 0 0;
+    }
+
+    /* page 3 */
+    /* Graphic Works */
+    .graphicDesign{
+        flex-direction: column;
+    }
+    .graphicDesign .content{
+        height: 40vh;
+        /* background-color: red; */
+        width: 100%;
+        position: relative;
+    }
+    .graphicDesign .content h1{
+        font-size: 16vw;
+        line-height: 16vw;
+    }
+    .graphicDesign .content p{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    .graphicWorks{
+        width: 100%;
+        padding: 5vh 0;
+        gap: 1rem;
+    }
+    .graphicWorks .graphicWrk{
+        height: 470px;
+    }
+    .graphicWorks .graphicGrid{
+        height: 45vw;
+        gap: 1rem;
+    }
+
+    /* Page 5 */
+    .something .title, .Project .title{
+        gap: 0.4rem;
+    }
+    .something h1, .Project h1{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .something p, .Project p{
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+    .something .skillsd{
+        flex-direction: column;
+
+    }
+    .skillsd .development{
+        width: 100%;
+    }
+    .skillsd .development h1{
+        font-family: Agrandir;
+        font-size: 3.5rem;
+        text-align: left;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* .webDesign .content, .graphicDesign .content{
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+} */

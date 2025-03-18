@@ -403,20 +403,66 @@ main{
     align-items: center;
     position: relative; 
 }
-.projects{
-    height: 400px;
-    width: 100%;
-    background-color: #325835;
-    margin-top: 5rem;
-    display: grid;
-    place-items: center;
-    border-radius: 2rem;
+.Project .projectstock{
+    height: 700px;
+    /* width: 100%; */
+    /* background-color: red; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
 }
-.projects h1{
+.Project .projectstock .pr1{
+    width: 70vw;
+    height: 100%;
+    /* background-color: green; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Project .projectstock .pr1 .image{
+    width: 90%;
+    height: 80%;
+    /* background-color: rgb(48, 12, 180); */
+    /* border: 1px solid black; */
+}
+.Project .projectstock .pr1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 15px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+.Project .projectstock .content{
+    width: 70%;
+    height: 25%;
+    /* background-color: rgb(116, 255, 2); */
+    /* border: 1px solid black; */
+}
+.Project .projectstock .content h1{
+    font-family: Agrandir;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin: 1rem 0 0.5rem 0;
+    text-transform: uppercase;
+}
+.Project .projectstock .content p{
+    font-family: monasansr;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+
+
+
+/* .projects h1{
     font-family: Agrandir;
     font-size: 12vw;
     color: #fefefe;
-}
+} */
 /* Watermark */
 .Project .watermark{
     color: #51515181;
@@ -565,6 +611,38 @@ main{
         text-align: left;
         line-height: 3rem;
         margin-bottom: 2rem;
+    }
+
+
+    /* Page 6 */
+    .Project .projectstock{
+        height: 400px;
+        margin-top: 40px;
+    }
+    .Project .projectstock .pr1{
+        width: auto;
+        height: auto;
+    }
+    .Project .projectstock .pr1{
+        width: 100%;
+        height: 95%;
+    }
+    .Project .projectstock .pr1 .image{
+        width: 90%;
+        height: 65%;
+    }
+    .Project .projectstock .content{
+        width: 90%;
+        height: 35%;
+    }
+    .Project .projectstock .content h1{
+        font-size: 2rem;
+        line-height: 1.5rem;
+    }
+    .Project .projectstock .content p{
+        font-family: monasansr;
+        font-size: 0.8rem;
+        line-height: 1rem;
     }
 }
 

@@ -21,8 +21,8 @@ main{
     background-color: #000;   
 }
 
-header{
-    /* background-color: #000; */
+/* header{
+    background-color: #000;
     color: #fefefe;
     padding: 2vw 5vw;
     display: flex;
@@ -33,7 +33,15 @@ header{
     position: absolute;
     width: 100%;
     top: 0;
+    left: 92%;
     z-index: 100;
+    border: 1px solid #fff;
+} */
+header i{
+    color: #fefefe;
+    font-size: 2rem;
+    position: absolute;
+    left: 3%;
 }
 
 header a{
@@ -257,33 +265,35 @@ header a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 .Project .title{
     color: #fefefe;
+    margin-bottom: 1rem;
 }
 
-.Project .projectstock{
-    height: 700px;
-    /* width: 100%; */
-    /* background-color: red; */
-    margin-top: 40px;
+.Project .projectstock{ 
+    /* margin-top: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    overflow-x: scroll;
+    overflow-x: scroll; */
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    gap: 12vw;
+    /* background-color: lightgreen; */
+    /* padding: 12vw; */
 }
 .Project .projectstock .pr1{
-    width: 70vw;
-    height: 100%;
-    /* background-color: green; */
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 970px;
+    flex-shrink: 0;
+}
+.Project .projectstock .pr2{
+    margin-left: 30%;
 }
 .Project .projectstock .pr1 .image{
-    width: 90%;
-    height: 80%;
+    width: 100%;
     background: rgba( 255, 255, 255, 0.05 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 14px );
@@ -300,7 +310,7 @@ header a{
     border-radius: 0.5rem;
 }
 .Project .projectstock .content{
-    width: 90%;
+    width: 100%;
     /* height: 25%; */
     padding: 1rem;
     display: flex;
@@ -338,30 +348,101 @@ header a{
     width: 50%;
 }
 
+.latest-project{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #010101;
+    padding: 5vh 5vw;
+}
+.latest-project h1{
+    font-family: Agrandir;
+    font-size: 5rem;
+    color: #fefefe;
+    text-align: center;
+}
+.latest-project .project-grid{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 350px;
+}
+.latest-project .project-grid .prg1{
+    background-color: #27673c;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: end;
+    position: relative;
+}
+.latest-project .prg1 .titles{
+    /* background-color: lightgoldenrodyellow; */
+    z-index: 100;
+    padding: 0.5rem 1rem;
+}
+.latest-project .prg1 p{
+    font-family: poppins;
+    color: #fefefe;
+    line-height: 1.4rem;
+    /* padding: 0 1rem; */
+}
+.latest-project .prg1 a{
+    color: #fefefe;
+    text-decoration: none;
+    /* margin-right: 0.5rem; */
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+}
+.latest-project .prg1 p:nth-last-child(2){
+    /* padding-bottom: 0.5rem; */
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: red;
+}
+.latest-project .project-grid .prg1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 10;
+    object-position: center;
+    border-radius: 0.5rem;
+    opacity: 90%;
+}
 
-
-
+footer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(32, 33, 31);
+    display: grid;
+    place-items: end;
+}
 /* .projects h1{
     font-family: Agrandir;
     font-size: 12vw;
     color: #fefefe;
 } */
 /* Watermark */
-.Project .watermark{
+footer .watermark{
     color: #51515181;
     /* background-color: red; */
     font-family: Agrandir;
     width: 100%;
     padding: 5vw;
-    margin-top: 5vw;
+    /* margin-top: 5vw; */
 }
-.Project .watermark h1{
+footer .watermark h1{
     font-size: 11vw;
     text-align: left;
     line-height: 10vw;
     text-transform: uppercase;
 }
-.Project .watermark p{
+footer .watermark p{
     margin-left: 0.5vw;
 }
 

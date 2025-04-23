@@ -19,3 +19,19 @@ tl.to(".loader .slide-3",{
     opacity: 0,
     y: '-30'
 })
+
+tl.from(".heads h1",{
+    delay: 0.3,
+    duration: 1,
+    opacity: 0,
+    scale: 5
+})
+tl.from(".heads p",{
+    duration: 1,
+    opacity: 0,
+})
+tl.from("header",{
+    duration: 1,
+    opacity: 0,
+    top: "-2%"
+})

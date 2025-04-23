@@ -41,6 +41,35 @@ main{
     position: relative;
 
 }
+header{
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5vw;
+    font-family: urbanist;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+header .here{
+    display: flex;
+    /* background-color: red; */
+    gap: 1rem;
+    align-items: center;
+}
+header .name{
+    width: 50%;
+    /* background-color: blue; */
+}
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
 .herosection{
     height: 100vh;
     width: 100%;

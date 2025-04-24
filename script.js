@@ -19,6 +19,9 @@ tl.to(".loader .slide-3",{
     opacity: 0,
     y: '-30'
 })
+tl.to(".loader",{
+    display: 'none'
+})
 
 tl.from(".heads h1",{
     delay: 0.3,

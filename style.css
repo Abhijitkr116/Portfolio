@@ -12,7 +12,7 @@ html,body{
 }
 
 .loader{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     /* background-color: #000; */
     display: flex;
@@ -44,16 +44,16 @@ main{
 header{
     width: 100%;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5vw;
+    padding: 0.3rem 5vw;
     font-family: urbanist;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
 }
 header .here{
     display: flex;
@@ -81,7 +81,6 @@ header a{
     height: 100%;
     width: 100%;
     background: rgba( 255, 255, 255, 0 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
     display: flex;
@@ -109,4 +108,76 @@ header a{
     font-size: 3vw;
     color: #fff;
     margin-right: 3.5vw;
+}
+
+
+.design{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+.design .videos{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.design .videos video{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+
+.about{
+    height: 200vh;
+    width: 100%;
+    background-color: fefefe;
+    display: flex;
+    padding: 0 5vw;
+    align-items: center;
+}
+.about .Abhimage{
+    height: 90%;
+    width: 40%;
+}
+.about .Abhimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about .content{
+    height: 90%;
+    width: 60%;
+    font-family: urbanist;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about .content .title{
+    font-size: 6vw;
+    line-height: 5.5vw;
+    font-weight: 600;
+}
+.about .content h2{
+    /* padding: 1rem 2rem; */
+    background-color: #000;
+    color: #fefefe;
+    width: 20%;
+    height: 5%;
+    display: grid;
+    place-items: center;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+
+}
+.about .content{
+    height: 90%;
+    width: 60%;
+    padding-left: 2rem;
 }

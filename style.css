@@ -99,10 +99,11 @@ header a{
 .heads h1{
     font-family: monigue;
     /* text-transform: uppercase; */
-    font-size: 17vw;
+    font-size: 16vw;
     color: #fff;
     letter-spacing: 0.2rem;
     line-height: 10vw;
+    text-transform: uppercase;
 }
 .heads p{
     font-family: "Hurricane", cursive;
@@ -110,7 +111,7 @@ header a{
     /* text-transform: uppercase; */
     font-size: 3vw;
     color: #fff;
-    margin-right: 3.5vw;
+    margin-right: .5vw;
 }
 
 
@@ -120,6 +121,7 @@ header a{
     display: grid;
     place-items: center;
     background-color: #000;
+    padding: 0 5vw;
 }
 
 .design .videos{
@@ -130,16 +132,16 @@ header a{
 }
 .design .videos video{
     height: 80%;
-    width: 80%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
 }
 
 
 .about{
     height: 200vh;
     width: 100%;
-    background-color: fefefe;
+    background-color:#F7F3EF;
     display: flex;
     padding: 0 5vw;
     align-items: center;
@@ -169,18 +171,243 @@ header a{
 }
 .about .content h2{
     /* padding: 1rem 2rem; */
-    background-color: #000;
-    color: #fefefe;
+    background-color: #fff;
+    color: #000;
     width: 20%;
-    height: 5%;
+    height: 4%;
     display: grid;
     place-items: center;
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    /* border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem; */
 
 }
 .about .content{
     height: 90%;
     width: 60%;
     padding-left: 2rem;
+}
+
+.selectedWorks{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #F7F3EF;
+    padding: 10vh 5vw;
+    padding-top: 15vh;
+}
+.selectedWorks .heading{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.selectedWorks .heading h1{
+    /* font-family: monigue; */
+    font-family: "Urbanist", sans-serif;
+    font-size: 18vw;
+    line-height: 12vw;
+    font-weight: 600;
+    letter-spacing: -1.15rem;
+    width: 80%;
+    text-align: center;
+}
+.selectedWorks .heading p{
+    font-family: "Urbanist", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    font-weight: 600;
+}
+.selectedWorks .heading a{
+    text-decoration: none;
+    background-color: #fff;
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    padding: 0.5rem;
+}
+.selectedWorks .projects{
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: #7d5d3e; */
+    margin-top: 15vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+.selectedWorks .projects .project{
+    height: 90vh;
+    width: 100%;
+    position: sticky;
+    top: 10%;
+}
+.project img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.projects .project .contents{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    /* padding: 0 5vw; */
+    /* background-color: red; */
+}
+.project .contents a{
+    text-decoration: none;
+    color: #fefefe;
+    width: 150px;
+    height: 60px;
+    font-size: 1rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    display: grid;
+    place-items: center;
+    background-color: #0a0a0a4d;
+    backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px ); 
+    font-family: urbanist;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.project .contents a:hover{
+    /* margin-right: 1rem; */
+    width: 170px;
+}
+
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F3EF;
+    padding: 20vh 5vw 0 5vw;
+}
+.contact .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+
+}
+.contact .heading h1{
+    font-family: "urbanist", sans-serif;
+    font-size: 22vw;
+    line-height: 12vw;
+    font-weight: 600;
+    letter-spacing: -1.2rem;
+    width: 80%;
+    text-align: center;
+    display: flex;
+}
+.contact .heading h1 .hinsamp{
+    font-family: "Hurricane", cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+}
+.contact .heading p{
+    font-family: "Urbanist", sans-serif;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    width: 70%;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    margin-top: 1rem;
+}
+.contact .socials{
+    display: flex;
+    gap: 0.5rem;
+}
+.contact .heading a{
+    text-decoration: none;
+    background-color: #fff;
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    padding: 0.5rem;
+    display: grid;
+    place-items: center;
+}
+
+
+
+footer{
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: #F7F3EF; */
+    background-color: #fefefe;
+    padding: 10vh 5vw 5vh 5vw;
+}
+footer .persections{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+a{
+    text-decoration: none;
+}
+footer .persections .psection{
+    /* background-color: #fefefe; */
+    display: grid;
+    place-items: center;
+    display: flex;
+    font-family: "Urbanist", sans-serif;
+    padding: 0.5rem;
+    align-items: start;
+}
+.psection h1{
+    min-width: 10rem;
+}
+.psection p{
+    font-weight: 600;
+    font-size: 1.3rem;
+} 
+.psection .socials{
+    display: flex;
+    gap: 1rem;
+}
+footer .persections .ps{
+    align-items: center;
+}
+.psection .socials a{
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* background-color: #F7F3EF; */
+    padding: 0.1rem 0.5rem;
+    transition: all 0.1s ease;
+    text-decoration: underline;
+}
+.psection .socials a:hover{
+    scale: 0.9;
+}
+
+.me{
+    /* background-color: #F7F3EF; */
+    margin-top: 10vh;
+    font-family: "monigue", sans-serif;
+}
+.me h1{
+    font-size: 18vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+.footTitle{
+    display: grid;
+    place-items: center;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    margin-top: -3%;
 }

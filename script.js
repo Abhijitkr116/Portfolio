@@ -1,3 +1,22 @@
+function menubox(){
+    var menu = document.querySelector(".mainmenu");
+    var menubox = document.querySelector(".menu");
+    var close = document.querySelector(".close");
+
+
+
+    menu.addEventListener('click', function(){
+        menubox.style.top = 0;
+        menubox.style.transition = "all 2s ease";
+    })
+    close.addEventListener('click', function(){
+        menubox.style.top = "-10%";
+        menubox.style.transition = "all 2s ease";
+    })
+}
+menubox();
+
+
 
 var tl = gsap.timeline();
 

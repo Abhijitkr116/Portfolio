@@ -522,25 +522,6 @@ footer .persections .ps{
         overflow-x: hidden;
     }
 
-    /* Menu page */
-.menu{
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    z-index: 110;
-    background-color: #000;
-    top: -10%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 3vh 5vw;
-    justify-content: center;
-    font-family: urbanist;
-    color: #fefefe;
-
-
-}
-
 
 
     /* Header */
@@ -618,5 +599,46 @@ footer .persections .ps{
         font-weight: 500;
     }
 
-    
+    /* Contact */
+    .contact{
+        padding: 0 5vw;
+        display: grid;
+        place-items: center;
+    }
+    .contact .heading{
+        gap: 8vw;
+    }
+    .contact .heading h1{
+        letter-spacing: -0.4rem;
+        width: 90%;
+    }
+    .contact .heading p{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .contact .socials{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    /* Footer */
+    footer .persections{
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+    footer .persections .psection{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .psection .socials{
+        gap: 0.5rem;
+    }
+    footer .persections .ps{
+        align-items: start;
+    }
 }

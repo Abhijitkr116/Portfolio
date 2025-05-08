@@ -52,7 +52,7 @@ main{
     position: absolute;
     z-index: 110;
     background-color: #000;
-    top: -10%;
+    top: -20%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -523,6 +523,32 @@ footer .persections .ps{
     }
 
 
+    .menu{
+        gap: 1rem;
+        padding: 2vh 5vw;
+    }
+    .menu-heading h1{
+        font-weight: 200;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
+    .mfooter .stay{
+        display: none;
+    }
+    .menu-links{
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-links .msection{
+        height: 20%;
+        padding: 0;
+    }
+    .menu-links .msection h1{
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+
 
     /* Header */
     header{
@@ -540,7 +566,7 @@ footer .persections .ps{
         letter-spacing: 0.05rem;
     }
     .heads p{
-        font-size: 4vw;
+        font-size: 5vw;
         margin-right: .5vw;
     }
 

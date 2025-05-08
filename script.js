@@ -7,11 +7,14 @@ function menubox(){
 
     menu.addEventListener('click', function(){
         menubox.style.top = 0;
-        menubox.style.transition = "all 2s ease";
+        menubox.style.opacity = 1;
+        menubox.style.transition = "all 0.7s ease";
     })
     close.addEventListener('click', function(){
         menubox.style.top = "-10%";
-        menubox.style.transition = "all 2s ease";
+        menubox.style.opacity = 0;
+        menubox.style.transition = "all 1.4s ease";
+
     })
 }
 menubox();

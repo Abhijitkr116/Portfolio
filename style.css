@@ -496,6 +496,9 @@ footer .persections .ps{
 .psection .socials a:hover{
     scale: 0.9;
 }
+footer .persections span{
+    color: #444;
+}
 
 .me{
     /* background-color: #F7F3EF; */

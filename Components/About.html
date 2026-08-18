@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Abhijit, Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="About.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">&lt;/&gt; <span>abhijit</span></div>
+    <div class="navlinks">
+      <a href="#journey">journey</a>
+      <a href="#stack">stack</a>
+      <a href="#build">what i build</a>
+      <a href="#contact">contact</a>
+    </div>
+    <button class="menu-trigger" id="menuTrigger" aria-label="Open menu" aria-expanded="false" aria-controls="siteMenu">
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow load-in d1">about-me.js</div>
+      <h1 class="display load-in d2">Frontend<br>developer,<br><em>line by line.</em></h1>
+      <p class="load-in d3">I build interfaces that feel obvious in hindsight — dashboards people trust, portfolios that load fast, and full-scale apps that hold up in production. Every pixel is intentional; every commit has a reason.</p>
+      <div class="hero-actions load-in d4">
+        <a class="btn btn-primary" href="#contact">Let's talk →</a>
+        <a class="btn btn-ghost" href="#journey">See my journey</a>
+      </div>
+    </div>
+
+    <div class="editor load-in d5">
+      <div class="editor-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="editor-tab">about.json</span>
+      </div>
+      <div class="editor-body" id="typedCode"></div>
+    </div>
+  </div>
+</header>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">career <span class="accent">log</span></h2>
+      <p class="section-sub">The commit history so far — squashed into the moments that mattered.</p>
+    </div>
+
+    <div class="log">
+      <div class="log-head">$ git log --oneline --reverse</div>
+
+      <div class="commit">
+        <div class="commit-hash">a3f9c1e</div>
+        <div>
+          <div class="commit-msg">Started the journey — first lines of code</div>
+          <div class="commit-meta"><span>early days</span><span class="tag">HTML/CSS/JS</span></div>
+        </div>
+      </div>
+
+      <div class="commit">
+        <div class="commit-hash">7d21b48</div>
+        <div>
+          <div class="commit-msg">Joined TCS — shipped production code at scale</div>
+          <div class="commit-meta"><span>professional experience</span><span class="tag">enterprise</span></div>
+        </div>
+      </div>
+
+      <div class="commit">
+        <div class="commit-hash">e58a0f2</div>
+        <div>
+          <div class="commit-msg">Went deep on React, Next.js and TypeScript</div>
+          <div class="commit-meta"><span>leveling up</span><span class="tag">frontend</span></div>
+        </div>
+      </div>
+
+      <div class="commit">
+        <div class="commit-hash">HEAD →</div>
+        <div>
+          <div class="commit-msg">Building dashboards, portfolios & full-scale web apps</div>
+          <div class="commit-meta"><span>now</span><span class="tag">available for work</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="edit-note">edit: swap in your real dates, company names and milestones here</div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">current <span class="accent">stack</span></h2>
+      <p class="section-sub">$ npm ls --depth=0 — the tools I reach for most.</p>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg reveal"><div class="pkg-name">react <span class="ver">@18</span></div><div class="pkg-desc">Component-driven UI, hooks-first</div></div>
+      <div class="pkg reveal"><div class="pkg-name">next.js <span class="ver">@14</span></div><div class="pkg-desc">SSR, routing, performance</div></div>
+      <div class="pkg reveal"><div class="pkg-name">typescript <span class="ver">@5</span></div><div class="pkg-desc">Types that catch bugs early</div></div>
+      <div class="pkg reveal"><div class="pkg-name">tailwindcss <span class="ver">@3</span></div><div class="pkg-desc">Fast, consistent styling</div></div>
+      <div class="pkg reveal"><div class="pkg-name">node.js <span class="ver">@20</span></div><div class="pkg-desc">APIs and tooling</div></div>
+      <div class="pkg reveal"><div class="pkg-name">ci/cd <span class="ver">@latest</span></div><div class="pkg-desc">Automated builds & deploys</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="build">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">what i <span class="accent">build</span></h2>
+      <p class="section-sub">Modern web apps focused on responsive design, accessibility and performance.</p>
+    </div>
+    <div class="build-grid">
+      <div class="build-card reveal">
+        <div class="build-icon">📊</div>
+        <h3>Business Dashboards</h3>
+        <p>Analytics dashboards that help businesses track, analyze and grow.</p>
+      </div>
+      <div class="build-card reveal">
+        <div class="build-icon">◐</div>
+        <h3>Portfolios</h3>
+        <p>Personal portfolios that highlight skills, projects and experience.</p>
+      </div>
+      <div class="build-card reveal">
+        <div class="build-icon">🌐</div>
+        <h3>Full Scale Web Apps</h3>
+        <p>End-to-end web applications built for real-world impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><div class="stat-num"><span class="amber">&lt;/&gt;</span></div><div class="stat-label">clean code, always</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">responsive builds</div></div>
+      <div class="stat"><div class="stat-num">3+</div><div class="stat-label">core focus areas</div></div>
+      <div class="stat"><div class="stat-num">A11y</div><div class="stat-label">built in, not bolted on</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta reveal">
+      <h2>Got an idea? <em>Let's ship it.</em></h2>
+      <p>Open to frontend roles and freelance projects.</p>
+      <a class="btn btn-primary" href="mailto:hello@example.com">Get in touch →</a>
+    </div>
+  </div>
+</section>
+
+<footer>copyright © 2026</footer>
+
+<div class="menu" id="siteMenu">
+    <div class="menu-heading">
+        <h1>Abhijit Kumar</h1>
+        <a class="ri-close-fill linksin close" id="menuClose" href="#" aria-label="Close menu"></a>
+    </div>
+    <div class="menu-links">
+        <div class="msection">
+            <h1>Home <span>(01)</span></h1>
+            <a href="../index.html" class="ri-arrow-right-line linksin"></a>
+        </div>
+        <div class="msection">
+            <h1>About me <span>(02)</span></h1>
+            <a href="./Components/About.html" class="ri-arrow-right-line linksin"></a>
+        </div>
+        <div class="msection">
+            <h1>Works <span>(03)</span></h1>
+            <a href="#" class="ri-arrow-right-line linksin"></a>
+        </div>
+        <div class="msection">
+            <h1>Insights <span>(04)</span></h1>
+            <a href="#" class="ri-arrow-right-line linksin"></a>
+        </div>
+    </div>
+    <div class="menu-footer">
+        <div class="mfooter">
+            <p>Follow me</p>
+            <p class="stay">Stay conected with me</p>
+        </div>
+        <div class="mfooter">
+            <div class="links">
+                <a href="https://github.com/Abhijitkr116/">Github <i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://www.linkedin.com/in/abhijit-kumar-4a8000259">LinkedIn <i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://www.instagram.com/abhijitkr116?igsh=MXc3MngweWhtanhneQ==">Instagram <i class="ri-arrow-right-up-line"></i></a>
+                <a data-email="abhijitkmr116@gmail.com" href="mailto:abhijitkmr116@gmail.com">Gmail <i class="ri-arrow-right-up-line"></i></a>
+            </div>
+            <div class="email"></div>
+        </div>
+    </div>
+</div>
+<script src="About.js"></script>
+</body>
+</html>

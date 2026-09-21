@@ -513,6 +513,7 @@ footer .persections .ps{
 }
 footer .persections span{
     color: #444;
+    color: #c90606;
 }
 
 .me{
@@ -591,7 +592,6 @@ footer .persections span{
 
     /* About */
     .about{
-        height: auto;
         flex-direction: column;
         padding: 0 5vw;
         gap: 1rem;
@@ -606,14 +606,15 @@ footer .persections span{
         padding-left: 0;
     }
     .about .content .title{
-        font-size: 6vw;
-        line-height: 5.6vw;
+        font-size: 7vw;
+        line-height: 9vw;
         text-align: center;
     }
     .about .content h2{
         padding: 1.5rem 2rem;
         background-color: #fff;
         color: #000;
+        margin: 7vh 0;
         width: 100%;
         display: flex;
         justify-content: center;

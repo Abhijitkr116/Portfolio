@@ -278,6 +278,10 @@ header a{
     line-height: 5vw;
     font-weight: 600;
 }
+.about .content .title span{
+    color: #E4DED2;
+    /* color: #F6F4F1; */
+}
 .about .content h2{
     /* padding: 1rem 2rem; */
     background-color: #fff;
@@ -289,6 +293,15 @@ header a{
     /* border-top-right-radius: 3rem;
     border-bottom-right-radius: 3rem; */
 
+}
+.about .content .specializing .head{
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+.about .content .specializing .head p{
+    line-height: 1.75rem;
+    color: #777;
 }
 
 .selectedWorks{
@@ -376,8 +389,9 @@ header a{
     border-bottom-left-radius: 5rem;
     display: grid;
     place-items: center;
-    background-color: #0a0a0a4d;
-    backdrop-filter: blur( 5px );-webkit-backdrop-filter: blur( 5px ); 
+    /* background-color: #0a0a0a4d; */
+    background-color: red;
+    backdrop-filter: blur( 10px );-webkit-backdrop-filter: blur( 5px ); 
     font-family: urbanist;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -608,6 +622,27 @@ footer .persections span{
     .about .specializing h1{
         text-align: center;
         font-size: 7vw;
+    }
+    .about .content .specializing .head{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .about .content .specializing h1{
+        margin-top: 2rem;
+        font-size: 8vw;
+    }
+    .about .content .specializing .head h1{
+        margin-top: 3rem;
+        font-size: 6vw;
+        line-height: 0;
+    }
+    .about .content .specializing .head p{
+        line-height: 1.5rem;
+        color: #777;
+        font-size: 3vw;
+        text-align: center;
+        /* display: none; */
     }
 
     /* Selected works */

@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Syne:wght@400..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    </head>
 <body>
     <main>
         <div class="loader">
@@ -21,10 +22,10 @@
             </div>
         </div>
 
-        <div class="menu">
+        <div class="menu" id="site-menu" aria-hidden="true" inert>
             <div class="menu-heading">
                 <h1>Abhijit Kumar</h1>
-                <a class="ri-close-fill linksin close"></a>
+                <button type="button" class="ri-close-fill linksin close" aria-label="Close menu"></button>
             </div>
             <div class="menu-links">
                 <div class="msection">
@@ -68,7 +69,7 @@
                 <p>Home</p>
             </div>
             
-            <a class="mainmenu" href="#">Menu</a>
+            <a class="mainmenu" href="#site-menu" aria-controls="site-menu" aria-expanded="false">Menu</a>
 
 
         </header>
@@ -156,6 +157,12 @@
                         <a href="https://realestate-six-smoky.vercel.app/">view project</a>
                     </div>
                 </div>
+                <div class="project project5">
+                    <img src="Images/Vegamovies.png" alt="Vegamovies">
+                    <div class="contents">
+                        <a href="https://vegamovies-virid.vercel.app/">view project</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -222,6 +229,7 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>

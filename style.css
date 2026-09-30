@@ -730,3 +730,69 @@ footer .persections span{
         letter-spacing: 0.1rem;
     }
 }
+
+/* Motion and interaction polish */
+.menu{
+    position: fixed;
+    top: 0;
+    transform: translateY(-105%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    will-change: transform, opacity;
+    transition: transform .72s cubic-bezier(.22,1,.36,1), opacity .55s ease, visibility 0s linear .72s;
+}
+.menu.is-open{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform .72s cubic-bezier(.22,1,.36,1), opacity .55s ease, visibility 0s;
+}
+.menu[aria-hidden="false"]{ visibility: visible; }
+body.menu-open{ overflow: hidden; }
+.mainmenu{ position: relative; }
+.mainmenu::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .28s ease;
+}
+.mainmenu:hover::after,.mainmenu:focus-visible::after{ transform: scaleX(1); transform-origin: left; }
+.scroll-progress{
+    position: fixed;
+    z-index: 120;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #c90606;
+    transform: scaleX(0);
+    transform-origin: left center;
+    pointer-events: none;
+}
+.project img{ transition: filter .45s ease; }
+.project:hover img{ filter: brightness(.88); }
+.selectedWorks .projects .project{
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+}
+.project .contents{ transform-style: preserve-3d; }
+.project .contents a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 0;
+}
+a:focus-visible{ outline: 2px solid #c90606; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{ scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
